@@ -1,0 +1,39 @@
+package com.ltts.movieapp.service;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ltts.movieapp.bo.CustomerBo;
+import com.ltts.movieapp.model.Customer;
+
+@Service
+public class CustomerServiceImp implements CustomerService{
+
+	@Autowired
+    private CustomerBo cb;
+	
+	@PersistenceContext
+	EntityManager entityManager;
+	
+	
+
+
+
+		@Override
+		public void save(Customer cmr) {
+			// TODO Auto-generated method stub
+			
+		}
+
+
+
+		@Override
+		public Customer findByEmailAndMobile(String email, String mobile) {
+			Customer cmr1=entityManager.find(Customer.class,email);
+			Customer cmr2=entityManager.find(Customer.class,mobile);
+			return cmr1;
+		}
+}

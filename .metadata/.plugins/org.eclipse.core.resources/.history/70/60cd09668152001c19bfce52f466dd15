@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Movie booking ticket</h1>
+<form action="bookingticket" method="post">
+Movie Name: <input type="text" name="mname"><br><br>
+Circle Type: <input type="text" name="cname"><br><br>
+Date Of Booking: <input type="text" name="dateofbooking"><br><br>
+Show Date: <input type="date" name="showdate" placeholder="yyyy-mm-dd"><br><br>
+Show Time: <input type="time" name="showtime"><br><br>
+No of Tickets: <input type="text" name="noofticket"><br><br>
+<input type="submit" value="add ticket">
+</form>
+</body>
+</html>
