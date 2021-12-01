@@ -1,0 +1,5 @@
+package com.ltts.movieapp.service;
+
+public class MovieServiceImp {
+
+}

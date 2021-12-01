@@ -1,0 +1,13 @@
+package com.ltts.movieapp.service;
+
+import com.ltts.movieapp.model.Customer;
+
+public interface CustomerService {
+
+	void save(Customer email);
+	
+	public Customer findByEmailAndMobile(String email, String mobile);
+
+	Customer findByEmailAndMobile(Customer email, Customer mobile);
+	
+}

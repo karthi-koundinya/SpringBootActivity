@@ -1,0 +1,26 @@
+package com.ltts.movieapp.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ltts.movieapp.bo.CustomerBo;
+import com.ltts.movieapp.model.Customer;
+
+@Service
+public class CustomerServiceImp implements CustomerService{
+
+	@Autowired
+    private CustomerBo cb;
+	
+		@Override
+		public void save(Customer email, Customer mobile) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public Customer findByEmailAndMobile(String email, String mobile) {
+			// TODO Auto-generated method stub
+			return cb.findByEmailAndMobile(email,mobile);
+		}
+}

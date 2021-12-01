@@ -1,0 +1,15 @@
+package com.ltts.movieapp.service;
+
+import java.util.List;
+
+import com.ltts.movieapp.model.Customer;
+
+public interface CustomerService {
+
+	void save(Customer email);
+	
+	public Customer findByEmailAndMobile(String email, String mobile);
+
+	public List<Customer> findAll();
+	
+}
